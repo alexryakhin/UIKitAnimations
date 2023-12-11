@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		0236167F2B2630A700336350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236167E2B2630A700336350 /* AppDelegate.swift */; };
 		023616812B2630A700336350 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023616802B2630A700336350 /* SceneDelegate.swift */; };
-		023616832B2630A700336350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023616822B2630A700336350 /* ViewController.swift */; };
+		023616832B2630A700336350 /* StandardAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023616822B2630A700336350 /* StandardAnimationViewController.swift */; };
 		023616882B2630A800336350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023616872B2630A800336350 /* Assets.xcassets */; };
 		0236168B2B2630A800336350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023616892B2630A800336350 /* LaunchScreen.storyboard */; };
 		023616942B2630D400336350 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 023616932B2630D400336350 /* SnapKit */; };
 		023616962B2630D400336350 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 023616952B2630D400336350 /* SnapKit-Dynamic */; };
+		023616982B27630A00336350 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023616972B27630A00336350 /* UIColor+Extension.swift */; };
+		0236169A2B27661D00336350 /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023616992B27661D00336350 /* MainListViewController.swift */; };
+		0236169C2B276D9100336350 /* KeyFrameAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236169B2B276D9100336350 /* KeyFrameAnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0236167B2B2630A700336350 /* UIKitAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0236167E2B2630A700336350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		023616802B2630A700336350 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		023616822B2630A700336350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		023616822B2630A700336350 /* StandardAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardAnimationViewController.swift; sourceTree = "<group>"; };
 		023616872B2630A800336350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0236168A2B2630A800336350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0236168C2B2630A800336350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		023616972B27630A00336350 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		023616992B27661D00336350 /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
+		0236169B2B276D9100336350 /* KeyFrameAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameAnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +66,10 @@
 			children = (
 				0236167E2B2630A700336350 /* AppDelegate.swift */,
 				023616802B2630A700336350 /* SceneDelegate.swift */,
-				023616822B2630A700336350 /* ViewController.swift */,
+				023616972B27630A00336350 /* UIColor+Extension.swift */,
+				023616992B27661D00336350 /* MainListViewController.swift */,
+				023616822B2630A700336350 /* StandardAnimationViewController.swift */,
+				0236169B2B276D9100336350 /* KeyFrameAnimationViewController.swift */,
 				023616872B2630A800336350 /* Assets.xcassets */,
 				023616892B2630A800336350 /* LaunchScreen.storyboard */,
 				0236168C2B2630A800336350 /* Info.plist */,
@@ -145,9 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				023616832B2630A700336350 /* ViewController.swift in Sources */,
+				023616832B2630A700336350 /* StandardAnimationViewController.swift in Sources */,
 				0236167F2B2630A700336350 /* AppDelegate.swift in Sources */,
 				023616812B2630A700336350 /* SceneDelegate.swift in Sources */,
+				0236169C2B276D9100336350 /* KeyFrameAnimationViewController.swift in Sources */,
+				0236169A2B27661D00336350 /* MainListViewController.swift in Sources */,
+				023616982B27630A00336350 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
