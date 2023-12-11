@@ -27,7 +27,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        view.backgroundColor = .systemBackground
+        viewToAnimate.layer.cornerRadius = 16
         viewToAnimate.backgroundColor = .red
 
         view.addSubview(viewToAnimate)
@@ -46,13 +47,14 @@ class ViewController: UIViewController {
     }
 
     private func buttonAction(_ action: UIAction) {
-        animateCube3()
+        animateCube1()
     }
 
     private func animateCube1() {
         UIView.animate(
             withDuration: 1,
-            delay: 0.3
+            delay: 0.3,
+            options: [.transitionCurlUp]
         ) { [weak self] in
             self?.viewToAnimate.backgroundColor = self?.randomColor
             self?.viewToAnimate.snp.updateConstraints({ make in
@@ -61,7 +63,11 @@ class ViewController: UIViewController {
             })
             self?.view.layoutIfNeeded()
         } completion: { [weak self] _ in
-            UIView.animate(withDuration: 0.4) {
+            UIView.animate(
+                withDuration: 0.4,
+                delay: 0,
+                options: [.transitionCurlUp]
+            ) {
                 self?.viewToAnimate.snp.updateConstraints({ make in
                     make.top.equalToSuperview().inset(Int.random(in: 100...200))
                 })
