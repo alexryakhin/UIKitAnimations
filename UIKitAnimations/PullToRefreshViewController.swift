@@ -33,7 +33,7 @@ class PullToRefreshViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        shapeLayer.fillColor = UIColor.black.cgColor
+        shapeLayer.fillColor = UIColor.systemFill.cgColor
         shapeLayer.path = createPath(point: CGPoint(x: view.bounds.maxX / 2, y: view.bounds.minY))
     }
 

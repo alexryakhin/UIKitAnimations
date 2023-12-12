@@ -16,6 +16,7 @@ enum MainListItem: Hashable, CaseIterable {
     case keyFrameAnimation
     case transition
     case basicCA
+    case animationGroup
     case shapeAnimation
     case pullToRefresh
 
@@ -29,6 +30,8 @@ enum MainListItem: Hashable, CaseIterable {
             "Transition"
         case .basicCA:
             "Basic Core Animation"
+        case .animationGroup:
+            "Animation group"
         case .shapeAnimation:
             "Shape Animation"
         case .pullToRefresh:
@@ -101,6 +104,8 @@ extension MainListViewController: UITableViewDelegate {
             viewController = TransitionViewController()
         case .basicCA:
             viewController = BasicCAViewController()
+        case .animationGroup:
+            viewController = AnimationGroupViewController()
         case .shapeAnimation:
             viewController = ShapeAnimationViewController()
         case .pullToRefresh:
