@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (5.6.0)
+  - TheAnimation (0.4.0)
+
+DEPENDENCIES:
+  - SnapKit
+  - TheAnimation
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - TheAnimation
+
+SPEC CHECKSUMS:
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  TheAnimation: b6d6bac50365897a3aecc5a9e7b4e1461909c1a0
+
+PODFILE CHECKSUM: a364603d164ea8b107077a5745e37162953b01ac
+
+COCOAPODS: 1.14.3

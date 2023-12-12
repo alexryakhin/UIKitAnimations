@@ -14,6 +14,8 @@ enum MainListSection: Hashable {
 enum MainListItem: Hashable, CaseIterable {
     case standardAnimation
     case keyFrameAnimation
+    case transition
+    case basicCA
 
     var title: String {
         switch self {
@@ -21,6 +23,10 @@ enum MainListItem: Hashable, CaseIterable {
             "Standard Animation"
         case .keyFrameAnimation:
             "Key Frame Animation"
+        case .transition:
+            "Transition"
+        case .basicCA:
+            "Basic Core Animation"
         }
     }
 }
@@ -85,6 +91,10 @@ extension MainListViewController: UITableViewDelegate {
             viewController = StandardAnimationViewController()
         case .keyFrameAnimation:
             viewController = KeyFrameAnimationViewController()
+        case .transition:
+            viewController = TransitionViewController()
+        case .basicCA:
+            viewController = BasicCAViewController()
         }
         viewController.title = item.title
         navigationController?.pushViewController(viewController, animated: true)

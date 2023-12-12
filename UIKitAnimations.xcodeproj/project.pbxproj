@@ -12,11 +12,12 @@
 		023616832B2630A700336350 /* StandardAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023616822B2630A700336350 /* StandardAnimationViewController.swift */; };
 		023616882B2630A800336350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023616872B2630A800336350 /* Assets.xcassets */; };
 		0236168B2B2630A800336350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023616892B2630A800336350 /* LaunchScreen.storyboard */; };
-		023616942B2630D400336350 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 023616932B2630D400336350 /* SnapKit */; };
-		023616962B2630D400336350 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 023616952B2630D400336350 /* SnapKit-Dynamic */; };
 		023616982B27630A00336350 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023616972B27630A00336350 /* UIColor+Extension.swift */; };
 		0236169A2B27661D00336350 /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023616992B27661D00336350 /* MainListViewController.swift */; };
 		0236169C2B276D9100336350 /* KeyFrameAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236169B2B276D9100336350 /* KeyFrameAnimationViewController.swift */; };
+		02A46B992B28875700361F2F /* BasicCAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A46B982B28875700361F2F /* BasicCAViewController.swift */; };
+		02F813332B277B440016EB9E /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F813322B277B440016EB9E /* TransitionViewController.swift */; };
+		A02130C1128EF23248BF4225 /* Pods_UIKitAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45825507E5A8345EC5B6DD14 /* Pods_UIKitAnimations.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,11 @@
 		023616972B27630A00336350 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		023616992B27661D00336350 /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
 		0236169B2B276D9100336350 /* KeyFrameAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameAnimationViewController.swift; sourceTree = "<group>"; };
+		02A46B982B28875700361F2F /* BasicCAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCAViewController.swift; sourceTree = "<group>"; };
+		02F813322B277B440016EB9E /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
+		45825507E5A8345EC5B6DD14 /* Pods_UIKitAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		693BD07A5318AF48BA364881 /* Pods-UIKitAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitAnimations.debug.xcconfig"; path = "Target Support Files/Pods-UIKitAnimations/Pods-UIKitAnimations.debug.xcconfig"; sourceTree = "<group>"; };
+		C3D09E9CC4AE0605109C4F6B /* Pods-UIKitAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitAnimations.release.xcconfig"; path = "Target Support Files/Pods-UIKitAnimations/Pods-UIKitAnimations.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,8 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				023616942B2630D400336350 /* SnapKit in Frameworks */,
-				023616962B2630D400336350 /* SnapKit-Dynamic in Frameworks */,
+				A02130C1128EF23248BF4225 /* Pods_UIKitAnimations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				0236167D2B2630A700336350 /* UIKitAnimations */,
 				0236167C2B2630A700336350 /* Products */,
+				8A38DCCC0F24F3486439C5D9 /* Pods */,
+				341EBB1C5841ACAF30ABD6CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,11 +77,30 @@
 				023616992B27661D00336350 /* MainListViewController.swift */,
 				023616822B2630A700336350 /* StandardAnimationViewController.swift */,
 				0236169B2B276D9100336350 /* KeyFrameAnimationViewController.swift */,
+				02F813322B277B440016EB9E /* TransitionViewController.swift */,
+				02A46B982B28875700361F2F /* BasicCAViewController.swift */,
 				023616872B2630A800336350 /* Assets.xcassets */,
 				023616892B2630A800336350 /* LaunchScreen.storyboard */,
 				0236168C2B2630A800336350 /* Info.plist */,
 			);
 			path = UIKitAnimations;
+			sourceTree = "<group>";
+		};
+		341EBB1C5841ACAF30ABD6CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45825507E5A8345EC5B6DD14 /* Pods_UIKitAnimations.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A38DCCC0F24F3486439C5D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				693BD07A5318AF48BA364881 /* Pods-UIKitAnimations.debug.xcconfig */,
+				C3D09E9CC4AE0605109C4F6B /* Pods-UIKitAnimations.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,19 +110,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0236168F2B2630A800336350 /* Build configuration list for PBXNativeTarget "UIKitAnimations" */;
 			buildPhases = (
+				C4B67D7738085B5BA5688516 /* [CP] Check Pods Manifest.lock */,
 				023616772B2630A700336350 /* Sources */,
 				023616782B2630A700336350 /* Frameworks */,
 				023616792B2630A700336350 /* Resources */,
+				AE4BA722FED192AC521A0295 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = UIKitAnimations;
-			packageProductDependencies = (
-				023616932B2630D400336350 /* SnapKit */,
-				023616952B2630D400336350 /* SnapKit-Dynamic */,
-			);
 			productName = UIKitAnimations;
 			productReference = 0236167B2B2630A700336350 /* UIKitAnimations.app */;
 			productType = "com.apple.product-type.application";
@@ -125,9 +149,6 @@
 				Base,
 			);
 			mainGroup = 023616722B2630A700336350;
-			packageReferences = (
-				023616922B2630D400336350 /* XCRemoteSwiftPackageReference "SnapKit" */,
-			);
 			productRefGroup = 0236167C2B2630A700336350 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +170,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AE4BA722FED192AC521A0295 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKitAnimations/Pods-UIKitAnimations-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKitAnimations/Pods-UIKitAnimations-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIKitAnimations/Pods-UIKitAnimations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4B67D7738085B5BA5688516 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIKitAnimations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		023616772B2630A700336350 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -157,8 +220,10 @@
 				023616832B2630A700336350 /* StandardAnimationViewController.swift in Sources */,
 				0236167F2B2630A700336350 /* AppDelegate.swift in Sources */,
 				023616812B2630A700336350 /* SceneDelegate.swift in Sources */,
+				02A46B992B28875700361F2F /* BasicCAViewController.swift in Sources */,
 				0236169C2B276D9100336350 /* KeyFrameAnimationViewController.swift in Sources */,
 				0236169A2B27661D00336350 /* MainListViewController.swift in Sources */,
+				02F813332B277B440016EB9E /* TransitionViewController.swift in Sources */,
 				023616982B27630A00336350 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,7 +279,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -277,7 +342,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -298,11 +363,13 @@
 		};
 		023616902B2630A800336350 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693BD07A5318AF48BA364881 /* Pods-UIKitAnimations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69S862NXBP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKitAnimations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -324,11 +391,13 @@
 		};
 		023616912B2630A800336350 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3D09E9CC4AE0605109C4F6B /* Pods-UIKitAnimations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69S862NXBP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKitAnimations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -370,30 +439,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		023616922B2630D400336350 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.6.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		023616932B2630D400336350 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 023616922B2630D400336350 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		023616952B2630D400336350 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 023616922B2630D400336350 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 023616732B2630A700336350 /* Project object */;
 }
