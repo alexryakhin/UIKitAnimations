@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0217E0372B28C282003C3A14 /* ShapeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217E0362B28C282003C3A14 /* ShapeAnimationViewController.swift */; };
 		0236167F2B2630A700336350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236167E2B2630A700336350 /* AppDelegate.swift */; };
 		023616812B2630A700336350 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023616802B2630A700336350 /* SceneDelegate.swift */; };
 		023616832B2630A700336350 /* StandardAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023616822B2630A700336350 /* StandardAnimationViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0217E0362B28C282003C3A14 /* ShapeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeAnimationViewController.swift; sourceTree = "<group>"; };
 		0236167B2B2630A700336350 /* UIKitAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0236167E2B2630A700336350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		023616802B2630A700336350 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				0236169B2B276D9100336350 /* KeyFrameAnimationViewController.swift */,
 				02F813322B277B440016EB9E /* TransitionViewController.swift */,
 				02A46B982B28875700361F2F /* BasicCAViewController.swift */,
+				0217E0362B28C282003C3A14 /* ShapeAnimationViewController.swift */,
 				023616872B2630A800336350 /* Assets.xcassets */,
 				023616892B2630A800336350 /* LaunchScreen.storyboard */,
 				0236168C2B2630A800336350 /* Info.plist */,
@@ -221,6 +224,7 @@
 				0236167F2B2630A700336350 /* AppDelegate.swift in Sources */,
 				023616812B2630A700336350 /* SceneDelegate.swift in Sources */,
 				02A46B992B28875700361F2F /* BasicCAViewController.swift in Sources */,
+				0217E0372B28C282003C3A14 /* ShapeAnimationViewController.swift in Sources */,
 				0236169C2B276D9100336350 /* KeyFrameAnimationViewController.swift in Sources */,
 				0236169A2B27661D00336350 /* MainListViewController.swift in Sources */,
 				02F813332B277B440016EB9E /* TransitionViewController.swift in Sources */,

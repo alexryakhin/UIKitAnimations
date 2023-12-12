@@ -11,11 +11,11 @@ import SnapKit
 class StandardAnimationViewController: UIViewController {
 
     private let viewToAnimate = UIView()
-    private lazy var button = UIButton(primaryAction: UIAction(title: "Animate", handler: buttonAction))
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Animate", style: .plain, target: self, action: #selector(buttonAction))
         view.backgroundColor = .systemBackground
         viewToAnimate.layer.cornerRadius = 16
         viewToAnimate.backgroundColor = .red
@@ -27,15 +27,9 @@ class StandardAnimationViewController: UIViewController {
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().inset(100)
         }
-
-        view.addSubview(button)
-        button.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().inset(100)
-        }
     }
 
-    private func buttonAction(_ action: UIAction) {
+    @objc private func buttonAction() {
         animateCube2()
     }
 

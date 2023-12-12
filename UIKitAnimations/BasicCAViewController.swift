@@ -17,6 +17,7 @@ final class BasicCAViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Animate", style: .plain, target: self, action: #selector(animateCube))
 
         myLayer.backgroundColor = UIColor.red.cgColor
+        myLayer.cornerRadius = 12
         myLayer.frame = CGRect(x: view.bounds.midX - 60, y: 100, width: 120, height: 120)
         view.layer.addSublayer(myLayer)
     }
