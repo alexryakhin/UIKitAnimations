@@ -19,6 +19,7 @@ enum MainListItem: Hashable, CaseIterable {
     case basicCA
     case animationGroup
     case shapeAnimation
+    case shapeStrokeAnimation
     case pullToRefresh
     case transformLayer
 
@@ -38,6 +39,8 @@ enum MainListItem: Hashable, CaseIterable {
             "Animation group"
         case .shapeAnimation:
             "Shape Animation"
+        case .shapeStrokeAnimation:
+            "Shape Stroke Animation"
         case .pullToRefresh:
             "Pull to refresh"
         case .transformLayer:
@@ -116,6 +119,8 @@ extension MainListViewController: UITableViewDelegate {
             viewController = AnimationGroupViewController()
         case .shapeAnimation:
             viewController = ShapeAnimationViewController()
+        case .shapeStrokeAnimation:
+            viewController = ShapeStrokeAnimationViewController()
         case .pullToRefresh:
             viewController = PullToRefreshViewController()
         case .transformLayer:
