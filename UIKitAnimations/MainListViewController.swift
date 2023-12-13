@@ -22,6 +22,7 @@ enum MainListItem: Hashable, CaseIterable {
     case shapeStrokeAnimation
     case pullToRefresh
     case transformLayer
+    case emitter
 
     var title: String {
         switch self {
@@ -45,6 +46,8 @@ enum MainListItem: Hashable, CaseIterable {
             "Pull to refresh"
         case .transformLayer:
             "Transform"
+        case .emitter:
+            "Emitter (Winder theme)"
         }
     }
 }
@@ -125,6 +128,8 @@ extension MainListViewController: UITableViewDelegate {
             viewController = PullToRefreshViewController()
         case .transformLayer:
             viewController = TransformLayerViewController()
+        case .emitter:
+            viewController = EmitterViewController()
         }
         viewController.title = item.title
         navigationController?.pushViewController(viewController, animated: true)
