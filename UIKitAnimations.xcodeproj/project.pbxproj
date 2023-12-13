@@ -19,6 +19,7 @@
 		0236169A2B27661D00336350 /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023616992B27661D00336350 /* MainListViewController.swift */; };
 		0236169C2B276D9100336350 /* KeyFrameAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236169B2B276D9100336350 /* KeyFrameAnimationViewController.swift */; };
 		02A46B992B28875700361F2F /* BasicCAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A46B982B28875700361F2F /* BasicCAViewController.swift */; };
+		02BFD9152B2979D10033EFF7 /* LayerTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BFD9142B2979D10033EFF7 /* LayerTransitionViewController.swift */; };
 		02F813332B277B440016EB9E /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F813322B277B440016EB9E /* TransitionViewController.swift */; };
 		A02130C1128EF23248BF4225 /* Pods_UIKitAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45825507E5A8345EC5B6DD14 /* Pods_UIKitAnimations.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		023616992B27661D00336350 /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
 		0236169B2B276D9100336350 /* KeyFrameAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameAnimationViewController.swift; sourceTree = "<group>"; };
 		02A46B982B28875700361F2F /* BasicCAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCAViewController.swift; sourceTree = "<group>"; };
+		02BFD9142B2979D10033EFF7 /* LayerTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerTransitionViewController.swift; sourceTree = "<group>"; };
 		02F813322B277B440016EB9E /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		45825507E5A8345EC5B6DD14 /* Pods_UIKitAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		693BD07A5318AF48BA364881 /* Pods-UIKitAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitAnimations.debug.xcconfig"; path = "Target Support Files/Pods-UIKitAnimations/Pods-UIKitAnimations.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				023616822B2630A700336350 /* StandardAnimationViewController.swift */,
 				0236169B2B276D9100336350 /* KeyFrameAnimationViewController.swift */,
 				02F813322B277B440016EB9E /* TransitionViewController.swift */,
+				02BFD9142B2979D10033EFF7 /* LayerTransitionViewController.swift */,
 				02A46B982B28875700361F2F /* BasicCAViewController.swift */,
 				0217E0362B28C282003C3A14 /* ShapeAnimationViewController.swift */,
 				0217E0382B28CD53003C3A14 /* PullToRefreshViewController.swift */,
@@ -231,6 +234,7 @@
 				0217E0392B28CD53003C3A14 /* PullToRefreshViewController.swift in Sources */,
 				0217E03B2B28D35D003C3A14 /* AnimationGroupViewController.swift in Sources */,
 				023616812B2630A700336350 /* SceneDelegate.swift in Sources */,
+				02BFD9152B2979D10033EFF7 /* LayerTransitionViewController.swift in Sources */,
 				02A46B992B28875700361F2F /* BasicCAViewController.swift in Sources */,
 				0217E0372B28C282003C3A14 /* ShapeAnimationViewController.swift in Sources */,
 				0236169C2B276D9100336350 /* KeyFrameAnimationViewController.swift in Sources */,

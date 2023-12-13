@@ -15,6 +15,7 @@ enum MainListItem: Hashable, CaseIterable {
     case standardAnimation
     case keyFrameAnimation
     case transition
+    case layerTransition
     case basicCA
     case animationGroup
     case shapeAnimation
@@ -28,6 +29,8 @@ enum MainListItem: Hashable, CaseIterable {
             "Key Frame Animation"
         case .transition:
             "Transition"
+        case .layerTransition:
+            "Layer transition"
         case .basicCA:
             "Basic Core Animation"
         case .animationGroup:
@@ -102,6 +105,8 @@ extension MainListViewController: UITableViewDelegate {
             viewController = KeyFrameAnimationViewController()
         case .transition:
             viewController = TransitionViewController()
+        case .layerTransition:
+            viewController = LayerTransitionViewController()
         case .basicCA:
             viewController = BasicCAViewController()
         case .animationGroup:
