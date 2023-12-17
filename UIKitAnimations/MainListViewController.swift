@@ -23,6 +23,7 @@ enum MainListItem: Hashable, CaseIterable {
     case pullToRefresh
     case transformLayer
     case emitter
+    case replication
 
     var title: String {
         switch self {
@@ -48,6 +49,8 @@ enum MainListItem: Hashable, CaseIterable {
             "Transform"
         case .emitter:
             "Emitter (Winder theme)"
+        case .replication:
+            "Replication"
         }
     }
 }
@@ -130,6 +133,8 @@ extension MainListViewController: UITableViewDelegate {
             viewController = TransformLayerViewController()
         case .emitter:
             viewController = EmitterViewController()
+        case .replication:
+            viewController = ReplicationViewController()
         }
         viewController.title = item.title
         navigationController?.pushViewController(viewController, animated: true)
