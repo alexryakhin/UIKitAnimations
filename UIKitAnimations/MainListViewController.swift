@@ -7,54 +7,6 @@
 
 import UIKit
 
-enum MainListSection: Hashable {
-    case main
-}
-
-enum MainListItem: Hashable, CaseIterable {
-    case standardAnimation
-    case keyFrameAnimation
-    case transition
-    case layerTransition
-    case basicCA
-    case animationGroup
-    case shapeAnimation
-    case shapeStrokeAnimation
-    case pullToRefresh
-    case transformLayer
-    case emitter
-    case replication
-
-    var title: String {
-        switch self {
-        case .standardAnimation:
-            "Standard Animation"
-        case .keyFrameAnimation:
-            "Key Frame Animation"
-        case .transition:
-            "Transition"
-        case .layerTransition:
-            "Layer transition"
-        case .basicCA:
-            "Basic Core Animation"
-        case .animationGroup:
-            "Animation group"
-        case .shapeAnimation:
-            "Shape Animation"
-        case .shapeStrokeAnimation:
-            "Shape Stroke Animation"
-        case .pullToRefresh:
-            "Pull to refresh"
-        case .transformLayer:
-            "Transform"
-        case .emitter:
-            "Emitter (Winder theme)"
-        case .replication:
-            "Replication"
-        }
-    }
-}
-
 final class MainListViewController: UIViewController {
     typealias DataSource = UITableViewDiffableDataSource<MainListSection, MainListItem>
 
@@ -109,33 +61,7 @@ final class MainListViewController: UIViewController {
 extension MainListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = MainListItem.allCases[indexPath.row]
-        let viewController: UIViewController
-        switch item {
-        case .standardAnimation:
-            viewController = StandardAnimationViewController()
-        case .keyFrameAnimation:
-            viewController = KeyFrameAnimationViewController()
-        case .transition:
-            viewController = TransitionViewController()
-        case .layerTransition:
-            viewController = LayerTransitionViewController()
-        case .basicCA:
-            viewController = BasicCAViewController()
-        case .animationGroup:
-            viewController = AnimationGroupViewController()
-        case .shapeAnimation:
-            viewController = ShapeAnimationViewController()
-        case .shapeStrokeAnimation:
-            viewController = ShapeStrokeAnimationViewController()
-        case .pullToRefresh:
-            viewController = PullToRefreshViewController()
-        case .transformLayer:
-            viewController = TransformLayerViewController()
-        case .emitter:
-            viewController = EmitterViewController()
-        case .replication:
-            viewController = ReplicationViewController()
-        }
+        let viewController = item.viewController
         viewController.title = item.title
         navigationController?.pushViewController(viewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
